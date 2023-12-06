@@ -5,19 +5,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>H.P. Lovecraft</title>
 </head>
 
-<body>
+<body id="index">
     <header>
         <h1>Howard Philips Lovecraft</h1>
     </header>
+    <nav>
+        <!-- First level UL for the main -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="">Media</a>
+                <!-- Second level UL for the sub menu -->
+                <ul>
+                    <li><a href="gallery.html">Gallery</li></a>
+                    <li><a href="media.html">Videos</li></a>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
 
+    </nav>
     <main>
         <section>
             <h2>Biography</h2>
+            <figure>
+                <img class="mainimg" src="images\H._P._Lovecraft,_June_1934.jpg" alt="Lovecraft Photo" width="200px">
+            </figure>
             <p><b>Howard Phillips Lovecraft</b> (1890 - Marc h 15, 1937) was an American writer of weird, science,
                 fantasy, and horror fiction. He is best known for his creation of the <b>Cthulhu Mythos</b>.Born in
                 <b>Providence, Rhode Island,</b> Lovecraft spent most of his life in New England. After his father's
@@ -36,23 +54,32 @@
             </p>
         </section>
         <section>
-            <h2>Images</h2>
-            <figure>
-                <figcaption>
-                    Howard Philips Lovecraft
-                </figcaption>
-                <img class="mainimg" src="images\H._P._Lovecraft,_June_1934.jpg" alt="Lovecraft Photo" width="500px">
-            </figure>
-            <figure>
-                <figcaption>
-                    The Call of Cuthulu
-                </figcaption>
-                <img class="mainimg"
-                    src="https://www.blackgate.com/wp-content/uploads/2016/09/Call-of-Cthulhu-Seventh-Edition.jpg"
-                    alt="The Call of Cuthulu" height="500px">
-            </figure>
-        </section>
-        <section>
+            <table>
+                <caption>His Life</caption>
+                <colgroup>
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Born</th>
+                        <th>Died</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>August 20, 1890</td>
+                        <td>March 15, 1937</td>
+
+                    </tr>
+                    <tr>
+                        <td>Providence, Rhode Island, U.S.</td>
+                        <td>Providence, Rhode Island, U.S.</td>
+                    </tr>
+                </tbody>
+            </table>
             <h2>Quotes</h2>
             <q cite="https://www.goodreads.com/author/quotes/9494.H_P_Lovecraft">
                 The oldest and strongest emotion of mankind is fear, and the oldest and strongest kind of fear is fear
@@ -68,11 +95,12 @@
                 <a href="https://en.wikipedia.org/wiki/H._P._Lovecraft" target="_blank">Wikipedia Page</a>
             </li>
             <li>
-            <a href="https://www.goodreads.com/author/quotes/9494.H_P_Lovecraft" target="_blank">List of quotes</a>
+                <a href="https://www.goodreads.com/author/quotes/9494.H_P_Lovecraft" target="_blank">List of quotes</a>
             </li>
             <li>
-            <a href="https://reedsy.com/discovery/blog/best-lovecraft-books" target="_blank">The 10 Best H.P. Lovecraft
-                Books </a>
+                <a href="https://reedsy.com/discovery/blog/best-lovecraft-books" target="_blank">The 10 Best H.P.
+                    Lovecraft
+                    Books </a>
             </li>
         </ul>
     </aside>
