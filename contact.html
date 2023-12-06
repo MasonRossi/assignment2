@@ -31,7 +31,48 @@
 
     </nav>
     <main>
-
+        <h2>Contact</h2>
+        <form>
+            <div>
+                <label for="name">Name&nbsp</label>
+                <input type="text" id="name" name="name" required autofocus>
+            </div>
+            <div>
+                <label for="email">Email&nbsp</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="number">Phone Number</label>
+                <input type="tel" id="number" name="number" required>
+            </div>
+            <div>
+                <label for="day">Date</label>
+                <input type="date" id="day" name="day" required>
+            </div>
+            <div>
+                <fieldset required>
+                    <legend>Have you read lovecraft books before?</legend>
+                    <input type="radio" id="Y" name="name" value="Y">Yes
+                    <br>
+                    <input type="radio" id="N" name="name" value="N" >No
+                </fieldset>
+            </div>
+            <div>
+                <label for="comments">What is your inquery?</label>
+                <br>
+                <textarea name="comments" id="comments" rows="4" required></textarea>
+            </div>
+            <div>
+                <label for="human">I am human</label>
+                <input type="checkbox" value="true" name="human" id="human" required>
+            </div>
+            <div>
+                <input type="reset" value="clear" name="clear" id="clear">
+            </div>
+            <div>
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
     </main>
 
     <aside>
