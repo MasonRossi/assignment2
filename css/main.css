@@ -8,11 +8,11 @@ body {
     grid-template-columns: 70% 30%;
     grid-template-rows: 100px 50px auto 50px;
     font: normal normal normal 1rem/1.5 Verdana, Arial, helvetica, sans-serif;
-    background: rgb(60, 100, 60);
+    background: rgb(0, 150, 0);
     padding: 1rem;
 }
 
-form{
+form {
     font: normal normal normal 1.5rem/1.5 Verdana, Arial, helvetica, sans-serif;
     width: 50%;
     padding: 1rem;
@@ -35,7 +35,7 @@ form{
     clip-path: polygon(-0.74% 12px, 95.66% 0.3%, 96.33% 94.74%, 0px 100%);
 }
 
-#video{
+#video {
     margin: 5rem;
 }
 
@@ -50,7 +50,7 @@ header {
     grid-column-start: 1;
     grid-column-end: 3;
     border: 10px black solid;
-    background-image: linear-gradient(darkgreen, darkblue);
+    background-image: linear-gradient(yellow, rgb(0, 150, 0));
 }
 
 footer {
@@ -59,7 +59,7 @@ footer {
     grid-column-start: 1;
     grid-column-end: 3;
     display: grid;
-    background-image: linear-gradient(rgb(60, 100, 60), darkblue);
+    background-image: linear-gradient(rgb(0, 150, 0), yellow);
 }
 
 table {
@@ -85,6 +85,7 @@ table caption {
 h1 {
     font-variant: small-caps;
     text-align: center;
+    color: darkblue;
     font-size: 2rem;
 }
 
@@ -94,8 +95,8 @@ h2 {
 }
 
 aside h2 {
-    -webkit-text-stroke: 1.5px black;
-
+color: yellow;
+padding: 10px;
 }
 
 footer p {
@@ -118,7 +119,7 @@ aside {
     grid-column-end: 3;
     font-size: large;
     font-weight: bold;
-    background: black url(../images/Cuthulu_awakens.jpg) center/cover;
+    background: rgb(0, 150, 0) url(../images/AsideImage.jpg) right/cover;
 }
 
 figure .mainimg {
@@ -146,12 +147,11 @@ ul li {
 
 aside>ul>li>a {
     text-decoration: none;
-    color: green;
-    -webkit-text-stroke: 1.5px black;
+    color: yellow;
 }
 
 aside>ul>li>a:hover {
-    color: darkblue;
+    color: rgb(0, 150, 0);
 }
 
 nav {
@@ -219,4 +219,27 @@ nav ul li ul li:hover a:hover {
     color: darkgreen;
     padding: 0.1rem;
     background: black;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    #gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    aside {
+        background: black url(../images/AsideImage.jpg) left/cover;
+
+    }
+
+
+    html {
+        font-size: 10px;
+    }
 }
